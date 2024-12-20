@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .select-content {
+    @apply bg-[#1E40AF] text-white border-none z-[100];
+  }
+  
+  .select-item {
+    @apply text-white hover:bg-[#2563EB] focus:bg-[#2563EB] focus:text-white;
+  }
+
+  .notification-dot {
+    @apply w-2 h-2 bg-red-500 rounded-full absolute -top-1 -right-1;
+  }
+
+  [role="dialog"] {
+    @apply bg-white text-gray-900;
+  }
+
+  [role="dialog"] button {
+    @apply text-white hover:bg-gray-100;
+  }
+}
